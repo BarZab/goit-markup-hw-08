@@ -1,0 +1,51 @@
+:root {
+  --brand-colour: #2196f3;
+  --text-colour: #212121;
+  --contacts-colour: #757575;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-colour);
+}
+
+.link {
+  text-decoration: none;
+  color: #000;
+}
+
+button {
+  background-color: #f5f4fa;
+  border: none;
+  cursor: pointer;
+}
+
+.contact {
+  text-decoration: none;
+  color: var(--contacts-colour);
+}
+
+.link:hover,
+.contact:hover {
+  color: var(--brand-colour);
+}
+
+.link:focus,
+.contact:focus {
+  color: var(--brand-colour);
+}
+
+button:hover {
+  background-color: var(--brand-colour);
+  color: #fff;
+}
+
+.order {
+  background-color: var(--brand-colour);
+  color: #fff;
+}
+
+.order:hover {
+  background-color: #fff;
+  color: var(--brand-colour);
+}
