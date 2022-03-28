@@ -1,37 +1,49 @@
 :root {
   --brand-colour: #2196f3;
-  --text-colour: #212121;
-  --contacts-colour: #757575;
+  --text-one: #212121;
+  --text-two: #757575;
+  --background-one: #2f303a;
+  --background-two: #f5f4fa;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  color: var(--text-colour);
+  font-family: 'Roboto', 'Raleway', sans-serif;
+  color: var(--text-one);
 }
 
-.link {
+.link,
+.header-link {
   text-decoration: none;
   color: #000;
+}
+
+.link,
+.contact {
+  font-size: 14px;
+  font-weight: 500;
 }
 
 button {
   background-color: #f5f4fa;
   border: none;
   cursor: pointer;
+  font-size: 16px;
 }
 
 .contact {
   text-decoration: none;
-  color: var(--contacts-colour);
+  color: var(--text-two);
+  line-height: 171%;
 }
 
 .link:hover,
-.contact:hover {
-  color: var(--brand-colour);
-}
-
+.contact:hover,
 .link:focus,
-.contact:focus {
+.contact:focus,
+.footer-link:focus,
+.footer-link:hover,
+.header-link:focus,
+.header-link:hover {
   color: var(--brand-colour);
 }
 
@@ -43,9 +55,94 @@ button:hover {
 .order {
   background-color: var(--brand-colour);
   color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 188%;
 }
 
 .order:hover {
   background-color: #fff;
   color: var(--brand-colour);
+}
+
+.section-one {
+  background-color: var(--background-one);
+  color: #fff;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 136%;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+section > ul > li > p {
+  color: var(--text-two);
+  line-height: 171%;
+}
+
+footer {
+  background-color: var(--background-one);
+  color: #fff;
+}
+
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header-link,
+.footer-link {
+  font-size: 26px;
+  font-weight: 700;
+  font-family: 'Raleway';
+}
+
+.team-section {
+  background-color: var(--background-two);
+}
+
+.branding {
+  color: var(--brand-colour);
+}
+
+h4 {
+  font-weight: 700;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+figure {
+  background-color: #fff;
+}
+
+.address {
+  font-style: normal;
+  line-height: 171%;
+}
+
+.button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 162%;
+}
+
+.upper-text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 200%;
+}
+
+.bottom-text {
+  color: var(--text-two);
+  font-size: 16px;
+  line-height: 188%;
+}
+
+.name {
+  font-weight: 500;
+  font-size: 16px;
 }
