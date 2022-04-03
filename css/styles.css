@@ -4,10 +4,11 @@
   --text-two: #757575;
   --background-one: #2f303a;
   --background-two: #f5f4fa;
+  --font-families: 'Roboto';
 }
 
-body {
-  font-family: 'Roboto', 'Raleway', sans-serif;
+.body {
+  font-family: var(--font-families);
   color: var(--text-one);
 }
 
@@ -23,7 +24,7 @@ body {
   font-weight: 500;
 }
 
-button {
+.button-general {
   background-color: #f5f4fa;
   border: none;
   cursor: pointer;
@@ -47,7 +48,7 @@ button {
   color: var(--brand-colour);
 }
 
-button:hover {
+.button-general:hover {
   background-color: var(--brand-colour);
   color: #fff;
 }
@@ -58,6 +59,7 @@ button:hover {
   font-size: 16px;
   font-weight: 700;
   line-height: 188%;
+  cursor: pointer;
 }
 
 .order:hover {
@@ -76,12 +78,12 @@ button:hover {
   text-transform: uppercase;
 }
 
-section > ul > li > p {
+.text {
   color: var(--text-two);
   line-height: 171%;
 }
 
-footer {
+.footer {
   background-color: var(--background-one);
   color: #fff;
 }
@@ -106,7 +108,7 @@ footer {
   color: var(--brand-colour);
 }
 
-h4 {
+.title {
   font-weight: 700;
 }
 
@@ -115,7 +117,7 @@ h4 {
   font-weight: 700;
 }
 
-figure {
+.figure-background {
   background-color: #fff;
 }
 
