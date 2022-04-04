@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -12,155 +13,166 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="body">
-    <header>
+    <header class="page-header">
         <h2>
             <a href="/" class="header-link"><span class="branding">Web</span>Studio</a>
         </h2>
     
         <nav>
-            <ul>
+            <ul class="menu">
                 <li><a href="index.html" class="link">Agencja</a></li>
-                <li><a href="portfolio.html" class="link">Portfolio</a></li>
+                <li><a href="portfolio.html" class="current-page">Portfolio</a></li>
                 <li><a href="kontakt" class="link">Kontakt</a></li>
             </ul>
         </nav>
     
-        <ul>
-            <li><a href="mailto:info@devstudio.com" class="contact">info@devstudio.com</a></li>
+        <ul class="contact-list">
+            <li class="mail-header"><a href="mailto:info@devstudio.com" class="contact">info@devstudio.com</a></li>
             <li><a href="tel:+48111111111" class="contact">+48 111 111 111</a></li>
         </ul>
     </header>
 
     <main>
-        <section>
+        <div class="filters container">
             <ul class="button">
-                <li><button type="button" class="button-general">Wszystkie</button></li>
-                <li><button type="button" class="button-general">Strony</button></li>
-                <li><button type="button" class="button-general">Aplikacje</button></li>
-                <li><button type="button" class="button-general">Dizajn</button></li>
-                <li><button type="button" class="button-general">Marketing</button></li>
+                <li><button type="button" class="button-filter">Wszystkie</button></li>
+                <li><button type="button" class="button-filter">Strony</button></li>
+                <li><button type="button" class="button-filter">Aplikacje</button></li>
+                <li><button type="button" class="button-filter">Dizajn</button></li>
+                <li><button type="button" class="button-filter">Marketing</button></li>
             </ul>
-        </section>
+        </div>
 
-        <section>
-            <figure class="figure-background">
+        <div class="projects container">
+            <ul class="projects-list">
+              <li class="projects-item">
+                <figure class="figure-background">
                 <img
                     src="images/technocrack.jpg"
                     width="370"
                     height="294"
                     alt="Technocrack"
                 />
-                <figcaption>
+                <figcaption class="caption">
                     <p  class="upper-text">Technocrack</p>
                     <p  class="bottom-text">Strona Internetowa</p>
                 </figcaption>
-            </figure>
-            <figure class="figure-background">
+            </figure></li>
+            <li class="projects-item">
+                <figure class="figure-background">
                 <img 
                     src="images/orleanvsgolden.jpg" 
                     width="370" 
                     height="294"
                     alt="New Orlen vs Golden Star" 
                 />
-                <figcaption>
+                <figcaption class="caption">
                     <p  class="upper-text">Grafika New Orlean vs Golden Star</p>
                     <p  class="bottom-text">Dizajn</p>
                 </figcaption>
-            </figure>
-            <figure class="figure-background">
+            </figure></li>
+            <li class="projects-item">
+                <figure class="figure-background">
                 <img 
                     src="images/seafood.jpg" 
                     width="370" 
                     height="294" 
                     alt="Seafood" 
                 />
-                <figcaption>
+                <figcaption class="caption">
                     <p  class="upper-text">Restauracja Seafood</p>
                     <p  class="bottom-text">Aplikacja</p>
                 </figcaption>
-            </figure>
-            <figure class="figure-background">
+            </figure></li>
+            <li class="projects-item">
+                <figure class="figure-background">
                 <img 
                     src="images/prime.jpg" 
                     width="370" 
                     height="294" 
                     alt="Prime" 
                 />
-                <figcaption>
+                <figcaption class="caption">
                     <p  class="upper-text">Projekt Prime</p>
                     <p  class="bottom-text">Marketing</p>
                 </figcaption>
-            </figure>
-            <figure class="figure-background">
+            </figure></li>
+            <li class="projects-item">
+                <figure class="figure-background">
                 <img 
                     src="images/boxes.jpg"
                     width="370" 
                     height="294" 
                     alt="Boxes" 
                 />
-                <figcaption>
+                <figcaption class="caption">
                     <p  class="upper-text">Projekt Boxes</p>
                     <p  class="bottom-text">Aplikacja</p>
                 </figcaption>
-            </figure>
-            <figure class="figure-background">
+            </figure></li>
+            <li class="projects-item">
+                <figure class="figure-background">
                 <img 
                     src="images/inspiration.jpg" 
                     width="370" 
                     height="294" 
                     alt="Inspiration" 
                 />
-                <figcaption>
+                <figcaption class="caption">
                     <p  class="upper-text">Inspiration has no Borders</p>
                     <p  class="bottom-text">Strona Internetowa</p>
                 </figcaption>
-            </figure>
-            <figure class="figure-background">
+            </figure></li>
+            <li class="projects-item">
+                <figure class="figure-background">
                 <img 
                     src="images/limitededition.jpg" 
                     width="370" 
                     height="294" 
                     alt="Limited Edition" 
                 />
-                <figcaption>
+                <figcaption class="caption">
                     <p  class="upper-text">Magazyn Limited Edition</p>
                     <p  class="bottom-text">Dizajn</p>
                 </figcaption>
-            </figure>
-            <figure class="figure-background">
+            </figure></li>
+            <li class="projects-item">
+                <figure class="figure-background">
                 <img 
                     src="images/projectlab.jpg" 
                     width="370" 
                     height="294" 
                     alt="Projekt LAB" 
                 />
-                <figcaption>
+                <figcaption class="caption">
                     <p  class="upper-text">Project LAB</p>
                     <p  class="bottom-text">Marketing</p>
                 </figcaption>
             </figure>
-            <figure class="figure-background">
+            <li class="projects-item">
+                <figure class="figure-background">
                 <img 
                     src="images/growingbusiness.jpg" 
                     width="370" 
                     height="294" 
                     alt="Growing Business" />
-                <figcaption>
+                <figcaption class="caption">
                     <p  class="upper-text">Growing Business</p>
                     <p  class="bottom-text">Aplikacja</p>
                 </figcaption>
-            </figure>
-        </section>
+            </figure></li>
+            </ul>
+        </div>
     </main>
-    <footer class="footer">
+    <footer class="footer container">
         <h2>
             <a href="/" class="footer-link"><span class="branding">Web</span>Studio</a>
         </h2>
         <address class="address">
             m. Warszawa, Aleje Jerozolimskie 21
         </address>
-        <ul>
-            <li><a href="mailto:info@devstudio.com" class="contact">info@devstudio.com</a></li>
+        <ul class="footer-contacts">
+            <li class="mail"><a href="mailto:info@devstudio.com" class="contact">info@devstudio.com</a></li>
             <li><a href="tel:+48111111111" class="contact">+48 111 111 111</a></li>
         </ul>
     </footer>

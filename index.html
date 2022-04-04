@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -14,37 +15,37 @@
 
 <body class="body">
 
-    <header>
+    <header  class="page-header">
         <h2>
             <a href="/" class="header-link"><span class="branding">Web</span>Studio</a>
         </h2>
 
         <nav>
-            <ul>
-                <li><a href="index.html" class="link">Agencja</a></li>
+            <ul  class="menu">
+                <li><a href="index.html" class="current-page">Agencja</a></li>
                 <li><a href="portfolio.html" class="link">Portfolio</a></li>
                 <li><a href="kontakt" class="link">Kontakt</a></li>
             </ul>
         </nav>
         
-        <ul>
-            <li><a href="mailto:info@devstudio.com" class="contact">info@devstudio.com</a></li>
+        <ul  class="contact-list">
+            <li  class="mail-header"><a href="mailto:info@devstudio.com" class="contact">info@devstudio.com</a></li>
             <li><a href="tel:+48111111111" class="contact">+48 111 111 111</a></li>
         </ul>
     </header>
 
     <main>
-        <section class="section-one">
-            <h1>
+        <section class="section-one container">
+            <h1 class="main-title">
                 EFEKTYWNE ROZWIĄZANIA<br> 
                 DLA WASZEGO BIZNESU
             </h1>
-            <p>
+            <p class="main-button">
                 <button type="button" class="order">Zamów Usługę</button>
             </p>
         </section>
-        <section>
-                <ul>
+        <section  class="section container about">
+                <ul class="about-list">
                     <li>
                         <h4 class="title">
                             LOREM IPSUM
@@ -86,30 +87,33 @@
                     </li>
                 </ul>
         </section>
-        <section>
-            <h2>Czym się zajmujemy</h2>
-            <img
+        <section  class="container">
+            <h2 class="about-title">Czym się zajmujemy</h2>
+            <ul class="about-us">
+            <li><img
                 src="images/programming.jpg"
                 width="370"
                 height="294"
                 alt="Programming"
-            />
-            <img 
+            /></li>
+            <li><img 
                 src="images/appui.jpg" 
                 width="370" 
                 height="294" 
                 alt="App Ui" 
-            />
-            <img
+            /></li>
+            <li><img
                 src="images/design.jpg"
                 width="370"
                 height="294"
                 alt="Design"
-            />
+            /></li>
+            </ul>
         </section>
-        <section class="team-section">
-            <h2>Nasz Zespół</h2>
-            <figure class="figure-background">
+        <section class="team-section container">
+            <h2  class="about-title">Nasz Zespół</h2>
+            <ul class="about-us">
+            <li><figure class="figure-background">
                 <img
                     src="images/productdesigner.jpg"
                     width="270"
@@ -118,10 +122,10 @@
                 />
                 <figcaption>
                     <p class="name">John Doe</p>
-                    <p class="bottom-text">Product Designer</p>
+                    <p class="bottom-name">Product Designer</p>
                 </figcaption>
-            </figure>
-            <figure class="figure-background">
+            </figure></li>
+            <li><figure class="figure-background">
                 <img
                     src="images/frontenddeveloper.jpg"
                     width="270"
@@ -130,10 +134,10 @@
                 />
                 <figcaption>
                     <p class="name">John Doe</p>
-                    <p class="bottom-text">Frontend Developer</p>
+                    <p class="bottom-name">Frontend Developer</p>
                 </figcaption>
-            </figure>
-            <figure class="figure-background">
+            </figure></li>
+            <li><figure class="figure-background">
                 <img
                     src="images/marketing.jpg"
                     width="270"
@@ -142,10 +146,10 @@
                 />
                 <figcaption>
                     <p class="name">John Doe</p>
-                    <p class="bottom-text">Marketing</p>
+                    <p class="bottom-name">Marketing</p>
                 </figcaption>
-            </figure>
-            <figure class="figure-background">
+            </figure></li>
+            <li><figure class="figure-background">
                 <img
                     src="images/uidesigner.jpg"
                     width="270"
@@ -154,20 +158,21 @@
                 />
                 <figcaption>
                     <p class="name">John Doe</p>
-                    <p class="bottom-text">UI Designer</p>
+                    <p class="bottom-name">UI Designer</p>
                 </figcaption>
-            </figure>
+            </figure></li>
+            </ul>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer container">
         <h2>
             <a href="/" class="footer-link"><span class="branding">Web</span>Studio</a>
         </h2>
         <address class="address">
             m. Warszawa, Aleje Jerozolimskie 21
         </address>
-        <ul>
-            <li><a href="mailto:info@devstudio.com" class="contact">info@devstudio.com</a></li>
+        <ul  class="footer-contacts">
+            <li  class="mail"><a href="mailto:info@devstudio.com" class="contact">info@devstudio.com</a></li>
             <li><a href="tel:+48111111111" class="contact">+48 111 111 111</a></li>
         </ul>
     </footer>
