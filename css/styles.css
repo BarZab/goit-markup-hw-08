@@ -8,20 +8,24 @@
   --brand-colour: #2196f3;
   --text-one: #212121;
   --text-two: #757575;
+  --text-three: #000;
   --background-one: #2f303a;
   --background-two: #f5f4fa;
   --font-families: 'Roboto';
+  --basic-color: #fff;
 }
 
 .body {
   font-family: var(--font-families), 'Raleway', sans-serif;
   color: var(--text-one);
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .link,
 .header-link {
   text-decoration: none;
-  color: #000;
+  color: var(--text-three);
 }
 
 .current-page {
@@ -42,7 +46,7 @@
 }
 
 .button-filter {
-  background-color: #f5f4fa;
+  background-color: var(--background-two);
   border: none;
   cursor: pointer;
   font-size: 16px;
@@ -72,14 +76,14 @@
 
 .button-filter:hover {
   background-color: var(--brand-colour);
-  color: #fff;
+  color: var(--basic-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .order {
   background-color: var(--brand-colour);
-  color: #fff;
+  color: var(--basic-color);
   font-size: 16px;
   font-weight: 700;
   line-height: 188%;
@@ -90,14 +94,14 @@
 }
 
 .order:hover {
-  background-color: #fff;
+  background-color: var(--basic-color);
   color: var(--brand-colour);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .section-one {
   background-color: var(--background-one);
-  color: #fff;
+  color: var(--basic-color);
   font-size: 44px;
   font-weight: 900;
   line-height: 136%;
@@ -115,13 +119,13 @@
 
 .footer {
   background-color: var(--background-one);
-  color: #fff;
+  color: var(--basic-color);
   height: 252px;
   padding-top: 40px;
 }
 
 .footer-link {
-  color: #fff;
+  color: var(--basic-color);
   text-decoration: none;
   padding-left: 215px;
   padding-top: 60px;
@@ -157,8 +161,9 @@
 }
 
 .figure-background {
-  background-color: #fff;
+  background-color: var(--basic-color);
   border: 1px solid #eeeeee;
+  margin: 0px;
 }
 
 .address {
@@ -245,6 +250,8 @@
 .projects {
   padding-top: 0px;
   padding-bottom: 94px;
+  max-width: 1200px;
+  margin-left: 215px;
 }
 
 .current-page {
@@ -255,21 +262,25 @@
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
+  margin-right: -30px;
   margin-top: -30px;
+  padding-left: 0px;
 }
 
 .projects-item {
   display: flex;
-  margin-left: 30px;
+  justify-content: center;
+  margin-right: 30px;
   margin-top: 30px;
   flex-basis: calc(100% / 3 - 30px);
+  max-width: 370px;
 }
 
 .container {
   max-width: 1600px;
   padding-left: auto;
   padding-right: auto;
+  
 }
 
 .caption {
