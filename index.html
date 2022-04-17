@@ -22,8 +22,8 @@
 
         <nav>
             <ul  class="menu">
-                <li><a href="index.html" class="current-page">Agencja</a></li>
-                <li><a href="portfolio.html" class="link">Portfolio</a></li>
+                <li class="current-page-item"><a href="index.html" class="current-page">Agencja</a></li>
+                <li><a href="portfolio.html" class="contact-link">Portfolio</a></li>
                 <li><a href="kontakt" class="link">Kontakt</a></li>
             </ul>
         </nav>
@@ -47,7 +47,7 @@
                 DLA WASZEGO BIZNESU
             </h1>
             <p class="main-button">
-                <button type="button" class="order">Zamów Usługę</button>
+                <button type="button" class="order" data-modal-open>Zamów Usługę</button>
             </p>
         </section>
         <section  class="section container about">
@@ -398,5 +398,15 @@
             </li>
         </ul>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal-window">
+            <button class="close-button" type="button" data-modal-close>
+                <svg class="x-button">
+                    <use href="./images/icons.svg#icon-close-button"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
