@@ -200,31 +200,40 @@
 }
 
 .figure-background {
-  position: relative;
-  overflow: hidden;
   background-color: var(--basic-color);
   border: 1px solid #eeeeee;
   margin: 0px;
 }
 
 .overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay-description {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 294px;
-  z-index: 1;
+  height: 100%;
   background: rgba(33, 150, 243, 0.9);
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0.03em;
   color: var(--basic-color);
-  
   transform: translateY(100%);
-  transition: transform 250ms ease;
+  transition: transform 1500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.figure-background:hover .overlay {
+.overlay-description {
+  padding-top: 49px;
+  padding-left: 24px;
+  padding-right: 45px;
+  margin: 0;
+}
+
+.overlay:hover .overlay-description {
   transform: translateY(0);
 }
 
