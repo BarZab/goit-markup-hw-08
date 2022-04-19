@@ -29,6 +29,10 @@
 .contact-link {
   text-decoration: none;
   color: var(--text-three);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current-page {
@@ -74,6 +78,10 @@
   margin-right: 4px;
   border-radius: 4px;
   padding: 6px 20px;
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact {
@@ -81,6 +89,10 @@
   color: var(--text-two);
   fill: var(--text-two);
   line-height: 171%;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-link {
@@ -118,6 +130,10 @@
   border: none;
   border-radius: 4px;
   padding: 10px 41px;
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order:hover {
@@ -348,6 +364,10 @@
   flex-basis: calc(100% / 3 - 30px);
   max-width: 370px;
   cursor: pointer;
+
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects-item:hover {
@@ -434,6 +454,10 @@
 
 .contact-icon {
   margin-right: 10px;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .feature {
@@ -466,6 +490,10 @@
   align-items: center;
   justify-content: center;
   fill: var(--icon-color);
+
+  transition-property: fill, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-footer {
@@ -477,6 +505,10 @@
   justify-content: center;
   fill: #fff;
   background-color: rgba(255, 255, 255, 0.1);
+
+  transition-property: fill, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon {
@@ -516,6 +548,10 @@
   cursor: pointer;
   justify-content: center;
   align-items: center;
+  
+  transition-property: fill, background-color, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-link:hover,
