@@ -166,6 +166,8 @@
   color: var(--text-two);
   line-height: 171%;
   letter-spacing: 0.03em;
+  text-align: start;
+  padding-left: 15px;
 }
 
 .footer {
@@ -208,6 +210,8 @@
 .title {
   font-weight: 700;
   margin-top: 0px;
+  text-align: start;
+  padding-left: 15px;
 }
 
 .section-title {
@@ -268,6 +272,7 @@
   list-style-type: none;
   display: flex;
   letter-spacing: 0.03em;
+  padding: 0;
 }
 
 .upper-text {
@@ -275,6 +280,11 @@
   font-size: 18px;
   line-height: 200%;
   letter-spacing: 0.06em;
+}
+
+.upper-text,
+.bottom-text {
+  text-align: start;
 }
 
 .bottom-text,
@@ -302,29 +312,36 @@
 .page-header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   border-bottom: 1px solid #ececec;
+  height: 80px;
+  margin: 0 auto;
 }
 
 .menu {
   list-style-type: none;
   display: flex;
-  padding-left: 93px;
+  padding-left: 0px;
+  padding-right: 93px;
   letter-spacing: 0.02em;
   margin-bottom: 0px;
   margin-top: 32px;
 }
 
 .header-link {
-  padding-left: 215px;
   letter-spacing: 0.03em;
+}
+
+.header-item {
+  margin-left: 215px;
 }
 
 .contact-list {
   display: flex;
   list-style-type: none;
-  position: absolute;
-  left: 1078px;
+  justify-content: end;
   letter-spacing: 0.02em;
+  margin-right: 215px;
 }
 
 .section {
@@ -342,7 +359,7 @@
 .projects {
   padding-top: 0px;
   padding-bottom: 94px;
-  max-width: 1200px;
+  max-width: 1170px;
   margin: 0 auto;
   align-items: center;
 }
@@ -379,8 +396,11 @@
 .container {
   max-width: 1600px;
   padding-left: auto;
-  padding-right: auto;
-  
+  padding-right: auto; 
+}
+
+.container-align {
+  text-align: center;
 }
 
 .caption {
@@ -408,6 +428,7 @@
   padding-top: 200px;
   line-height: 136%;
   letter-spacing: 0.06em;
+  font-size: 44px;
 }
 
 .main-button {
@@ -416,7 +437,9 @@
 }
 
 .about {
-  padding: 94px 215px;
+  padding: 94px 0px;
+  margin-left: 215px;
+  max-width: 1170px;
 }
 
 .about-list {
@@ -474,6 +497,8 @@
   0px 1px 1px rgba(0, 0, 0, 0.14),
   0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  max-width: 270px;
+  border: none;
 }
 
 .social-list {
@@ -532,7 +557,7 @@
   display: flex;
   justify-content: space-between;
   list-style: none;
-  width: 1200px;
+  width: 1170px;
   margin: 50px 215px 53px 215px;
   padding-left: 0px;
   padding: 0px;
@@ -604,6 +629,10 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
+
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-window {
@@ -614,6 +643,11 @@
   width: 528px;
   height: 581px;
   background-color: var(--basic-color);
+  border-radius: 4px;
+
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
@@ -632,6 +666,10 @@
   border-radius: 50%;
   cursor: pointer;
   background-color: var(--basic-color);
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-button:hover,
