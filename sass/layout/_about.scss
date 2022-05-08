@@ -1,0 +1,27 @@
+.about-list {
+    display: flex;
+    list-style: none;
+    padding: 50px 215px 94px 215px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.description {
+    position: absolute;
+    top: 224px;
+    background-color: rgba(47, 48, 58, 0.8);
+    width: 370px;
+    height: 70px;
+    text-align: center;
+}
+
+.description_text {
+    margin-top: 27px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--basic-color);
+}

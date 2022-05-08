@@ -1,0 +1,119 @@
+.footer {
+    background-color: var(--background-one);
+    color: var(--basic-color);
+    height: 252px;
+    padding-top: 40px;
+}
+
+.footer_list {
+    display: flex;
+    list-style: none;
+    padding-left: 0px;
+    max-width: 1170px;
+    margin-top: 0px;
+    margin-left: 215px;
+    justify-content: space-between;
+}
+
+.footer_address {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 171%;
+    margin-bottom: 9px;
+}
+
+.footer_contacts {
+    list-style-type: none;
+    padding-left: 0px;
+    margin-top: 0px;
+}
+
+.footer_join {
+    margin-bottom: 20px;
+    margin-top: 32px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.footer_social-list {
+    display: flex;
+    list-style: none;
+    padding-left: 0px;
+}
+
+.footer_social-item {
+    padding-right: 10px;
+}
+
+.footer_social-icon {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    fill: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    transition-property: fill, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        fill: #fff;
+        background-color: var(--brand-colour);
+    }
+}
+
+.footer_form {
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+    background-color: var(--background-one);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+
+.footer_submit {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    background-color: var(--brand-colour);
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 188%;
+    letter-spacing: 0.06em;
+    color: var(--basic-color);
+    fill: var(--basic-color);
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: var(--basic-color);
+        color: var(--brand-colour);
+        fill: var(--brand-colour);
+    }
+}
+
+.footer_icon {
+    margin-left: 24px;
+}
+
+.footer_mail {
+    padding-bottom: 9px;
+}

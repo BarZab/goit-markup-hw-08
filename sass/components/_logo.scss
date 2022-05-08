@@ -1,0 +1,32 @@
+.header_logo {
+    color: var(--text-three);
+}
+
+.header_logo,
+.footer_logo {
+    font-size: 26px;
+    font-weight: 700;
+    font-family: 'Raleway';
+    letter-spacing: 0.03em;
+    text-decoration: none;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus,
+    &:hover {
+        color: var(--brand-colour);
+        fill: var(--brand-colour);
+    }
+}
+
+.footer_logo {
+    color: var(--basic-color);
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.logo_branding {
+    color: var(--brand-colour);
+}

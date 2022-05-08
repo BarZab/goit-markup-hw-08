@@ -1,0 +1,61 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --brand-colour: #2196f3;
+    --text-one: #212121;
+    --text-two: #757575;
+    --text-three: #000;
+    --icon-color: #AFB1B8;
+    --background-one: #2f303a;
+    --background-two: #f5f4fa;
+    --background-three: #F5F4FA;
+    --font-families: 'Roboto';
+    --basic-color: #fff;
+}
+
+body {
+    font-family: var(--font-families), 'Raleway', sans-serif;
+    color: var(--text-one);
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.contact {
+    text-decoration: none;
+    color: var(--text-two);
+    fill: var(--text-two);
+    line-height: 171%;
+    font-size: 14px;
+    font-weight: 500;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--brand-colour);
+        fill: var(--brand-colour);
+    }
+}
+
+.relative {
+    position: relative;
+}
+
+.title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
