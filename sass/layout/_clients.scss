@@ -2,7 +2,7 @@
     padding-top: 94px;
 }
 
-.clients_list {
+.clients__list {
     display: flex;
     justify-content: space-between;
     list-style: none;
@@ -12,7 +12,7 @@
     padding: 0px;
 }
 
-.clients_link {
+.clients__link {
     display: flex;
     width: 170px;
     height: 92px;
@@ -34,7 +34,7 @@
     }
 }
 
-.clients_logo {
+.clients__logo {
     width: 106px;
     height: 60px;
 }

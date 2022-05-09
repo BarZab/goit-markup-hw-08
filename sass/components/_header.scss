@@ -6,11 +6,11 @@
     height: 80px;
     margin: 0 auto;
 }
-.header_heading {
+.header__heading {
     margin-left: 215px;
 }
 
-.header_menu {
+.header__menu {
     list-style-type: none;
     display: flex;
     padding-left: 0px;
@@ -21,7 +21,7 @@
     align-items: baseline;
 }
 
-.header_current-page-link {
+.header__current-page-link {
     text-decoration: none;
     color: var(--brand-colour);
 
@@ -37,7 +37,7 @@
 }
 
 
-.header_nav {
+.header__nav {
     text-decoration: none;
     color: var(--text-three);
 
@@ -52,29 +52,29 @@
     }
 }
 
-.header_current-page {
+.header__current-page {
     max-height: 48px;
 }
 
-.header_nav,
-.header_current-page {
+.header__nav,
+.header__current-page {
     font-size: 14px;
     font-weight: 500;
 }
 
-.header_nav {
+.header__nav {
     padding-right: 46.5px;
 }
 
-.header_nav--padding {
+.header__nav--padding {
     padding-right: 46px;
 }
 
-.header_nav--padding {
+.header__nav--padding {
     padding-left: 46px;
 }
 
-.header_contacts {
+.header__contacts {
     display: flex;
     list-style-type: none;
     justify-content: end;
@@ -82,11 +82,11 @@
     margin-right: 215px;
 }
 
-.header_mail {
+.header__mail {
     padding-right: 50px;
 }
 
-.header_icon {
+.header__icon {
     margin-right: 10px;
 
     transition-property: color;

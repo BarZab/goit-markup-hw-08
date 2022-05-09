@@ -1,9 +1,9 @@
-.header_logo {
+.header__logo {
     color: var(--text-three);
 }
 
-.header_logo,
-.footer_logo {
+.header__logo,
+.footer__logo {
     font-size: 26px;
     font-weight: 700;
     font-family: 'Raleway';
@@ -21,12 +21,12 @@
     }
 }
 
-.footer_logo {
+.footer__logo {
     color: var(--basic-color);
     margin-top: 60px;
     margin-bottom: 20px;
 }
 
-.logo_branding {
+.logo__branding {
     color: var(--brand-colour);
 }
