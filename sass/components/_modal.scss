@@ -16,8 +16,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 528px;
-    height: 581px;
+    width: 450px;
+    height: 609px;
     background-color: var(--basic-color);
     border-radius: 4px;
 
@@ -60,11 +60,10 @@
 }
 
 .form-title {
-    margin-top: 40px;
-    margin-bottom: 12px;
+    margin: 40px auto 12px;
     font-weight: 700;
     font-size: 20px;
-    line-height: 23px;
+    line-height: 150%;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--text-one);
@@ -85,7 +84,7 @@
 }
 
 .form__input {
-    width: 448px;
+    width: 370px;
     height: 40px;
     padding-left: 40px;
     margin-bottom: 10px;
@@ -99,7 +98,7 @@
 }
 
 .form__comment {
-    width: 448px;
+    width: 370px;
     height: 120px;
     margin-bottom: 20px;
     margin-top: 4px;
@@ -112,7 +111,7 @@
         font-size: 12px;
         line-height: 14px;
         letter-spacing: 0.01em;
-        
+
         color: rgba(117, 117, 117, 0.5);
     }
 
@@ -131,8 +130,8 @@
 
 .form__checkbox-description {
     margin-top: 0px;
-    font-size: 14px;
-    line-height: 171%;
+    font-size: 12px;
+    line-height: 14px;
     letter-spacing: 0.03em;
     color: var(--text-two);
 
@@ -163,6 +162,7 @@
 .form__submit {
     width: 200px;
     height: 50px;
+    margin-top: 20px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     background-color: var(--brand-colour);
@@ -187,7 +187,7 @@
 
 .form__person {
     position: absolute;
-    top: 19.5%;
+    top: 24.5%;
     transform: translateY(-50%);
     left: 54px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -195,7 +195,7 @@
 
 .form__phone {
     position: absolute;
-    top: 31%;
+    top: 36%;
     transform: translateY(-50%);
     left: 54px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -203,7 +203,7 @@
 
 .form__email {
     position: absolute;
-    top: 42.7%;
+    top: 47%;
     transform: translateY(-50%);
     left: 54px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -226,4 +226,46 @@
 .form__email:hover,
 .form__email:focus {
     fill: var(--brand-colour);
+}
+
+@media screen and (max-width: 767.99px) {
+    .form-title {
+        max-width: 370px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+.modal-window {
+    width: 528px;
+    height: 581px;
+}
+
+.form-title {
+    line-height: 23px;
+}
+
+.form__input {
+    width: 448px;
+}
+
+.form__comment {
+    width: 448px;
+}
+
+.form__person {
+    top: 19.5%;
+}
+
+.form__phone {
+    top: 31%;
+}
+
+.form__email {
+    top: 42.7%;
+}
+
+.form__checkbox-description {
+    font-size: 14px;
+    line-height: 171%;
+}
 }

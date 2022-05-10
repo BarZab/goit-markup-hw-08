@@ -1,8 +1,6 @@
-.filters {
-    display: flex;
-    justify-content: center;
-    padding-top: 94px;
-    padding-bottom: 50px;
+.filtres {
+    text-align: center;
+    padding-top: 60px;
 }
 
 .filters__button-list {
@@ -11,8 +9,12 @@
     line-height: 162%;
     list-style-type: none;
     display: flex;
+    flex-wrap: wrap;
     letter-spacing: 0.03em;
     padding: 0;
+    margin-top: 60px;
+    margin: 60px auto 40px;
+    width: 450px;
 }
 
 .filters__button {
@@ -21,10 +23,11 @@
     cursor: pointer;
     font-size: 16px;
     font-weight: 500;
+    line-height: 162%;
+    letter-spacing: 0.03em;
     margin-left: 4px;
     margin-right: 4px;
     border-radius: 4px;
-    padding: 6px 20px;
 
     transition-property: color, background-color, box-shadow;
     transition-duration: 250ms;
@@ -39,3 +42,37 @@
     }
 }
 
+@media screen and (max-width: 767.999px) {
+    .filters__button--all {
+        margin-bottom: 15px;
+        padding: 6px 13px;
+    }
+
+    .filters__button--pages {
+        
+        padding: 6px 39.5px;
+    }
+
+    .filters__button--apps {
+        padding: 6px 37.5px;
+    }
+
+    .filters__button--design {
+        padding: 6px 28px;
+    }
+
+    .filters__button--marketing {
+        padding: 6px 26.5px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+.filters {
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
+
+.filters__button {
+    padding: 6px 20px;
+}
+}

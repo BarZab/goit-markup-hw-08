@@ -105,9 +105,9 @@
                     </li>
                 </ul>
         </section>
-        <section  class="container container--align">
+        <section  class="about container container--align">
             <h2 class="title">Czym się zajmujemy</h2>
-            <ul class="about-list">
+            <ul class="about__list">
             <li class="relative"><img
                 src="images/programming.jpg"
                 width="370"
@@ -144,12 +144,12 @@
             <h2  class="title">Nasz Zespół</h2>
             <ul class="team__list">
             <li class="team__item"><figure class="team__item-background">
-                <img
-                    src="images/productdesigner.jpg"
-                    width="270"
-                    height="260"
-                    alt="John Doe"
-                />
+                <picture>
+                    <source media="(max-width: 767.999px)"
+                        srcset="./images/product-designer-450.jpg 480w, ./images/product-designer-450@2x.jpg 960w"
+                        sizes="(min-width: 320px) 480px, 100vw">
+                    <img src="./images/product-designer-450.jpg" alt="John Doe">
+                </picture>
                 <figcaption>
                     <p class="team__name">John Doe</p>
                     <p class="team__description">Product Designer</p>
@@ -186,12 +186,12 @@
                 </figcaption>
             </figure></li>
             <li class="team__item"><figure class="team__item-background">
-                <img
-                    src="images/frontenddeveloper.jpg"
-                    width="270"
-                    height="260"
-                    alt="John Doe"
-                />
+                <picture>
+                    <source media="(max-width: 767.999px)"
+                        srcset="./images/frontend-dev-450.jpg 480w, ./images/frontend-dev-450@2x.jpg 960w"
+                        sizes="(min-width: 320px) 480px, 100vw">
+                    <img src="./images/frontend-dev-450.jpg" alt="John Doe">
+                </picture>
                 <figcaption>
                     <p class="team__name">John Doe</p>
                     <p class="team__description">Frontend Developer</p>
@@ -228,12 +228,12 @@
                 </figcaption>
             </figure></li>
             <li class="team__item"><figure class="team__item-background">
-                <img
-                    src="images/marketing.jpg"
-                    width="270"
-                    height="260"
-                    alt="John Doe"
-                />
+                <picture>
+                    <source media="(max-width: 767.999px)"
+                        srcset="./images/marketing-450.jpg 480w, ./images/marketing-450@2x.jpg 960w"
+                        sizes="(min-width: 320px) 480px, 100vw">
+                    <img src="./images/marketing-450.jpg" alt="John Doe">
+                </picture>
                 <figcaption>
                     <p class="team__name">John Doe</p>
                     <p class="team__description">Marketing</p>
@@ -270,12 +270,12 @@
                 </figcaption>
             </figure></li>
             <li class="team__item"><figure class="team__item-background">
-                <img
-                    src="images/uidesigner.jpg"
-                    width="270"
-                    height="260"
-                    alt="John Doe"
-                />
+                <picture>
+                    <source media="(max-width: 767.999px)"
+                        srcset="./images/ui-designer-450.jpg 480w, ./images/ui-designer-450@2x.jpg 960w"
+                        sizes="(min-width: 320px) 480px, 100vw">
+                    <img src="./images/ui-designer-450.jpg" alt="John Doe">
+                </picture>
                 <figcaption>
                     <p class="team__name">John Doe</p>
                     <p class="team__description">UI Designer</p>
@@ -364,7 +364,7 @@
     <footer class="footer container">
         <ul class="footer__list">
             <li>
-                <h2>
+                <h2 class="footer__logo-mobile">
                     <a href="/" class="footer__logo"><span class="logo__branding">Web</span>Studio</a>
                 </h2>
                  <address class="footer__address">

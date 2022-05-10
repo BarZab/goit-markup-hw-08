@@ -41,11 +41,11 @@
     <main>
         <div class="filters container container-align">
             <ul class="filters__button-list">
-                <li><button type="button" class="filters__button">Wszystkie</button></li>
-                <li><button type="button" class="filters__button">Strony</button></li>
-                <li><button type="button" class="filters__button">Aplikacje</button></li>
-                <li><button type="button" class="filters__button">Dizajn</button></li>
-                <li><button type="button" class="filters__button">Marketing</button></li>
+                <li><button type="button" class="filters__button filters__button--all">Wszystkie</button></li>
+                <li><button type="button" class="filters__button filters__button--pages">Strony</button></li>
+                <li><button type="button" class="filters__button filters__button--apps">Aplikacje</button></li>
+                <li><button type="button" class="filters__button filters__button--design">Dizajn</button></li>
+                <li><button type="button" class="filters__button filters__button--marketing">Marketing</button></li>
             </ul>
         </div>
 
@@ -54,12 +54,12 @@
               <li class="projects__item">
                 <figure class="figure figure__overlay">
                 <div class="figure__overlay">
-                <img
-                    src="images/technocrack.jpg"
-                    width="370"
-                    height="294"
-                    alt="Technocrack"
-                />
+                <picture>
+                    <source media="(max-width: 767.999px)"
+                        srcset="./images/technocrack-450.jpg 480w, ./images/technocrack-450@2x.jpg 960w"
+                        sizes="(min-width: 320px) 480px, 100vw">
+                    <img src="./images/technocrack-450.jpg" alt="Technocrack">
+                </picture>
                     <p class="figure__overlay-description">
                         Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę
                         do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji
@@ -73,12 +73,12 @@
             <li class="projects__item">
                 <figure class="figure figure__overlay">
                 <div class="figure__overlay">
-                <img 
-                    src="images/orleanvsgolden.jpg" 
-                    width="370" 
-                    height="294"
-                    alt="New Orlen vs Golden Star" 
-                />
+                <picture>
+                    <source media="(max-width: 767.999px)"
+                        srcset="./images/orleanvsgolden-450.jpg 480w, ./images/orleanvsgolden-450@2x.jpg 960w"
+                        sizes="(min-width: 320px) 480px, 100vw">
+                    <img src="./images/orleanvsgolden-450.jpg" alt="New Orlean Vs Golden Star">
+                </picture>
                 <p class="figure__overlay-description">
                     Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę
                     platformę
@@ -93,12 +93,12 @@
             <li class="projects__item">
                 <figure class="figure figure__overlay">
                 <div class="figure__overlay">
-                <img 
-                    src="images/seafood.jpg" 
-                    width="370" 
-                    height="294" 
-                    alt="Seafood" 
-                />
+                <picture>
+                    <source media="(max-width: 767.999px)"
+                        srcset="./images/seafood-450.jpg 480w, ./images/seafood-450@2x.jpg 960w"
+                        sizes="(min-width: 320px) 480px, 100vw">
+                    <img src="./images/seafood-450.jpg" alt="Restauracja Seafood">
+                </picture>
                 <p class="figure__overlay-description">
                     Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę
                     platformę
@@ -113,12 +113,12 @@
             <li class="projects__item">
                 <figure class="figure figure__overlay">
                 <div class="figure__overlay">
-                <img 
-                    src="images/prime.jpg" 
-                    width="370" 
-                    height="294" 
-                    alt="Prime" 
-                />
+                <picture>
+                    <source media="(max-width: 767.999px)"
+                        srcset="./images/prime-450.jpg 480w, ./images/prime-450@2x.jpg 960w"
+                        sizes="(min-width: 320px) 480px, 100vw">
+                    <img src="./images/prime-450.jpg" alt="Projekt Prime">
+                </picture>
                 <p class="figure__overlay-description">
                     Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę
                     platformę
@@ -133,12 +133,12 @@
             <li class="projects__item">
                 <figure class="figure figure__overlay">
                 <div class="figure__overlay">
-                <img 
-                    src="images/boxes.jpg"
-                    width="370" 
-                    height="294" 
-                    alt="Boxes" 
-                />
+                <picture>
+                    <source media="(max-width: 767.999px)"
+                        srcset="./images/boxes-450.jpg 480w, ./images/boxes-450@2x.jpg 960w"
+                        sizes="(min-width: 320px) 480px, 100vw">
+                    <img src="./images/boxes-450.jpg" alt="Projekt Boxes">
+                </picture>
                 <p class="figure__overlay-description">
                     Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę
                     platformę
@@ -153,12 +153,12 @@
             <li class="projects__item">
                 <figure class="figure figure__overlay">
                 <div class="figure__overlay">
-                <img 
-                    src="images/inspiration.jpg" 
-                    width="370" 
-                    height="294" 
-                    alt="Inspiration" 
-                />
+                <picture>
+                    <source media="(max-width: 767.999px)"
+                        srcset="./images/inspiration-450.jpg 480w, ./images/inspiration-450@2x.jpg 960w"
+                        sizes="(min-width: 320px) 480px, 100vw">
+                    <img src="./images/inspiration-450.jpg" alt="Inspiration">
+                </picture>
                 <p class="figure__overlay-description">
                     Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę
                     platformę
@@ -173,12 +173,12 @@
             <li class="projects__item">
                 <figure class="figure figure__overlay">
                 <div class="figure__overlay">
-                <img 
-                    src="images/limitededition.jpg" 
-                    width="370" 
-                    height="294" 
-                    alt="Limited Edition" 
-                />
+                <picture>
+                    <source media="(max-width: 767.999px)"
+                        srcset="./images/limitededition-450.jpg 480w, ./images/limitededition-450@2x.jpg 960w"
+                        sizes="(min-width: 320px) 480px, 100vw">
+                    <img src="./images/limitededition-450.jpg" alt="Limited Edition">
+                </picture>
                 <p class="figure__overlay-description">
                     Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę
                     platformę
@@ -193,12 +193,12 @@
             <li class="projects__item">
                 <figure class="figure figure__overlay">
                 <div class="figure__overlay">
-                <img 
-                    src="images/projectlab.jpg" 
-                    width="370" 
-                    height="294" 
-                    alt="Projekt LAB" 
-                />
+                <picture>
+                    <source media="(max-width: 767.999px)"
+                        srcset="./images/projectlab-450.jpg 480w, ./images/projectlab-450@2x.jpg 960w"
+                        sizes="(min-width: 320px) 480px, 100vw">
+                    <img src="./images/projectlab-450.jpg" alt="Project LAB">
+                </picture>
                 <p class="figure__overlay-description">
                     Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę
                     platformę
@@ -213,12 +213,12 @@
             <li class="projects__item">
                 <figure class="figure figure__overlay">
                 <div class="figure__overlay">
-                <img 
-                    src="images/growingbusiness.jpg" 
-                    width="370" 
-                    height="294" 
-                    alt="Growing Business" 
-                />
+                <picture>
+                    <source media="(max-width: 767.999px)"
+                        srcset="./images/growingbusiness-450.jpg 480w, ./images/growingbusiness-450@2x.jpg 960w"
+                        sizes="(min-width: 320px) 480px, 100vw">
+                    <img src="./images/growingbusiness-450.jpg" alt="Growing Business">
+                </picture>
                 <p class="figure__overlay-description">
                     Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę
                     platformę

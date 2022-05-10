@@ -1,4 +1,10 @@
-.about-list {
+@media screen and (max-width: 1199.999px) {
+    .about {
+        display: none;
+    }
+}
+
+.about__list {
     display: flex;
     list-style: none;
     padding: 50px 215px 94px 215px;

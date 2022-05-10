@@ -1,20 +1,21 @@
 .clients {
-    padding-top: 94px;
+    padding: 60px 0;
 }
 
 .clients__list {
-    display: flex;
-    justify-content: space-between;
+    margin: 30px auto 0;
     list-style: none;
-    width: 1170px;
-    margin: 50px 215px 53px 215px;
-    padding-left: 0px;
-    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 450px;
+    height: 336px;
+    padding: 0;
 }
 
 .clients__link {
     display: flex;
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
@@ -37,4 +38,20 @@
 .clients__logo {
     width: 106px;
     height: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+.clients {
+    padding-top: 94px;
+}
+
+.clients__list {
+    justify-content: space-between;
+    width: 1170px;
+    margin: 50px 215px 53px 215px;
+}
+
+.clients__link {
+    width: 170px;
+}
 }

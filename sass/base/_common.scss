@@ -47,15 +47,24 @@ body {
     position: relative;
 }
 
-.title {
-    text-align: center;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
-    letter-spacing: 0.03em;
-}
-
 .icon {
     width: 20px;
     height: 20px;
+}
+
+.title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: 0.03em;
+    color: var(--text-one);
+    margin: 0;
+}
+
+@media screen and (min-width: 1200px) {
+    .title {
+            font-size: 36px;
+            line-height: 42px;
+        }
 }
