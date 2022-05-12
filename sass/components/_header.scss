@@ -3,6 +3,21 @@
     align-items: center;
     border-bottom: 1px solid #ececec;
     height: 60px;
+    justify-content: space-between;
+}
+
+.header__menu-button {
+    cursor: pointer;
+    height: 16px;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        fill: var(--brand-colour);
+    }
 }
 
 @media screen and (max-width: 767.999px) {
@@ -12,6 +27,12 @@
 
     .header__menu,
     .header__contacts {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header__menu-button {
         display: none;
     }
 }

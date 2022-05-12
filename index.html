@@ -38,10 +38,16 @@
                     <use href="./images/icons.svg#icon-smartphone"></use>
                 </svg>+48 111 111 111</a></li>
         </ul>
+        <div class="header__menu-button" role="button" data-mobile-menu-open>
+            <svg class="header__menu-icon" width="24px" height="16px">
+                <use href="/images/icons.svg#icon-menu"></use>
+            </svg>
+        </div>
     </header>
 
     <main>
         <section class="face container container--align">
+            <div class="face__background">
             <h1 class="face__title">
                 EFEKTYWNE ROZWIĄZANIA<br> 
                 DLA WASZEGO BIZNESU
@@ -49,6 +55,7 @@
             <p class="face__button">
                 <button type="button" class="button-order" data-modal-open>Zamów Usługę</button>
             </p>
+            </div>
         </section>
         <section  class="section container advantages">
                 <ul class="advantages__list">
@@ -109,30 +116,33 @@
             <h2 class="title">Czym się zajmujemy</h2>
             <ul class="about__list">
             <li class="relative"><img
-                src="images/programming.jpg"
+                alt="Programming"
+                src="images/programming-370.jpg"
+                srcset="images/programming-370@2x.jpg 2x"
                 width="370"
                 height="294"
-                alt="Programming"
             />
             <div class="description">
                 <p class="description__text">aplikacje komputerowe</p>
             </div>
             </li>
-            <li class="relative"><img 
-                src="images/appui.jpg" 
-                width="370" 
-                height="294" 
-                alt="App Ui" 
+            <li class="relative"><img
+                alt="App Ui"
+                src="images/appui-370.jpg"
+                srcset="images/appui-370@2x.jpg 2x"
+                width="370"
+                height="294"
             />
             <div class="description">
                 <p class="description__text">aplikacje mobilne</p>
             </div>
             </li>
             <li class="relative"><img
-                src="images/design.jpg"
+                alt="Design"
+                src="images/design-370.jpg"
+                srcset="images/design-370@2x.jpg 2x"
                 width="370"
                 height="294"
-                alt="Design"
             />
             <div class="description">
                 <p class="description__text">rozwiązania graficzne</p>
@@ -146,8 +156,14 @@
             <li class="team__item"><figure class="team__item-background">
                 <picture>
                     <source media="(max-width: 767.999px)"
-                        srcset="./images/product-designer-450.jpg 480w, ./images/product-designer-450@2x.jpg 960w"
-                        sizes="(min-width: 320px) 480px, 100vw">
+                        srcset="./images/product-designer-450.jpg 450w, ./images/product-designer-450@2x.jpg 900w"
+                        sizes="(min-width: 320px) 450px, 100vw">
+                    <source media="(min-width: 768px) and (max-width: 1199.999px)"
+                        srcset="./images/product-designer-354.jpg 354w, ./images/product-designer-354@2x.jpg 708w"
+                        sizes="(min-width: 768px) 354px, 100vw">
+                    <source media="(min-width: 1200px)"
+                        srcset="./images/product-designer-270.jpg 270w, ./images/product-designer-270@2x.jpg 540w"
+                        sizes="(min-width: 1200px) 270px, 100vw">
                     <img src="./images/product-designer-450.jpg" alt="John Doe">
                 </picture>
                 <figcaption>
@@ -188,8 +204,14 @@
             <li class="team__item"><figure class="team__item-background">
                 <picture>
                     <source media="(max-width: 767.999px)"
-                        srcset="./images/frontend-dev-450.jpg 480w, ./images/frontend-dev-450@2x.jpg 960w"
+                        srcset="./images/frontend-dev-450.jpg 450w, ./images/frontend-dev-450@2x.jpg 960w"
                         sizes="(min-width: 320px) 480px, 100vw">
+                    <source media="(min-width: 768px) and (max-width: 1199.999px)"
+                        srcset="./images/frontend-dev-354.jpg 354w, ./images/frontend-dev-354@2x.jpg 708w"
+                        sizes="(min-width: 768px) 354px, 100vw">
+                    <source media="(min-width: 1200px)"
+                        srcset="./images/frontend-dev-270.jpg 270w, ./images/frontend-dev-270@2x.jpg 540w"
+                        sizes="(min-width: 1200px) 270px, 100vw">
                     <img src="./images/frontend-dev-450.jpg" alt="John Doe">
                 </picture>
                 <figcaption>
@@ -232,6 +254,12 @@
                     <source media="(max-width: 767.999px)"
                         srcset="./images/marketing-450.jpg 480w, ./images/marketing-450@2x.jpg 960w"
                         sizes="(min-width: 320px) 480px, 100vw">
+                    <source media="(min-width: 768px) and (max-width: 1199.999px)"
+                        srcset="./images/marketing-354.jpg 354w, ./images/marketing-354@2x.jpg 708w"
+                        sizes="(min-width: 768px) 354px, 100vw">
+                    <source media="(min-width: 1200px)" 
+                        srcset="./images/marketing-270.jpg 270w, ./images/marketing-270@2x.jpg 540w"
+                        sizes="(min-width: 1200px) 270px, 100vw">
                     <img src="./images/marketing-450.jpg" alt="John Doe">
                 </picture>
                 <figcaption>
@@ -274,6 +302,12 @@
                     <source media="(max-width: 767.999px)"
                         srcset="./images/ui-designer-450.jpg 480w, ./images/ui-designer-450@2x.jpg 960w"
                         sizes="(min-width: 320px) 480px, 100vw">
+                    <source media="(min-width: 768px) and (max-width: 1199.999px)"
+                        srcset="./images/ui-designer-354.jpg 354w, ./images/ui-designer-354@2x.jpg 708w"
+                        sizes="(min-width: 768px) 354px, 100vw">
+                    <source media="(min-width: 1200px)" 
+                        srcset="./images/ui-designer-270.jpg 270w, ./images/ui-designer-270@2x.jpg 540w"
+                        sizes="(min-width: 1200px) 270px, 100vw">
                     <img src="./images/ui-designer-450.jpg" alt="John Doe">
                 </picture>
                 <figcaption>
@@ -475,5 +509,61 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <div class="backdrop is-hidden" data-mobile-menu>
+        <div class="menu__modal-window">
+            <button class="menu__close-button" type="button" data-mobile-menu-close>
+                <svg class="menu__close-button-icon">
+                    <use href="./images/icons.svg#icon-close-button"></use>
+                </svg>
+            </button>
+            <div class="menu__div">
+                <ul class="menu__list">
+                    <li class="menu__list-item">
+                        <a href="index.html" class="menu__nav">Agencja</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="portfolio.html" class="menu__nav">Portfolio</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="#" class="menu__nav">Kontakt</a>
+                    </li>
+                </ul>
+                <div>
+                    <ul class="menu__list menu__list--contacts">
+                        <li class="menu__list-item">
+                            <a href="tel:+48111111111" class="menu__phone">+48 111 111 111</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="mailto:info@devstudio.com" class="menu__email">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                    <ul class="menu__list menu__list--socials">
+                        <li class="menu__social">
+                            <a href="/" class="menu__social-link">Instagram</a>
+                        </li>
+                        <li class="menu__line">
+                            <div></div>
+                        </li>
+                        <li class="menu__social">
+                            <a href="/" class="menu__social-link">Twitter</a>
+                        </li>
+                        <li class="menu__line">
+                            <div></div>
+                        </li>
+                        <li class="menu__social">
+                            <a href="/" class="menu__social-link">Facebook</a>
+                        </li>
+                        <li class="menu__line">
+                            <div></div>
+                        </li>
+                        <li class="menu__social">
+                            <a href="/" class="menu__social-link">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
