@@ -14,7 +14,7 @@
     padding: 0;
     margin-top: 60px;
     margin: 60px auto 40px;
-    width: 450px;
+    max-width: 450px;
 }
 
 .filters__button {
@@ -42,6 +42,12 @@
     }
 }
 
+@media screen and (max-width: 399.999px) {
+    .filters__button-list {
+        justify-content: center;
+    }
+}
+
 @media screen and (max-width: 767.999px) {
     .filters__button--all {
         margin-bottom: 15px;
@@ -49,11 +55,11 @@
     }
 
     .filters__button--pages {
-        
         padding: 6px 39.5px;
     }
 
     .filters__button--apps {
+        margin-bottom: 15px;
         padding: 6px 37.5px;
     }
 

@@ -1,15 +1,9 @@
-.clients {
-    padding: 60px 0;
-}
-
 .clients__list {
     margin: 30px auto 0;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    width: 450px;
-    height: 336px;
+    max-width: 450px;
     padding: 0;
 }
 
@@ -38,6 +32,31 @@
 .clients__logo {
     width: 106px;
     height: 60px;
+}
+
+@media screen and (max-width: 419.999px) {
+    .clients {
+        padding: 60px 0 30px;
+    }
+
+    .clients__list {
+        justify-content: center;
+    }
+
+    .clients__link {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 420px) {
+    .clients {
+        padding: 60px 0;
+    }
+
+    .clients__list {
+        justify-content: space-between;
+        height: 336px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
