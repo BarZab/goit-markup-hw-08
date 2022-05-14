@@ -6,14 +6,12 @@
 .projects__list {
     list-style-type: none;
     padding-left: 0px;
-}
-
-.projects__item {
-    max-width: 450px;
+    margin: 0;
 }
 
 .projects__item {
     cursor: pointer;
+    max-width: 450px;
 
     transition-property: box-shadow;
     transition-duration: 250ms;
@@ -100,6 +98,30 @@
     }
 }
 
+@media screen and (min-width: 768px) {
+
+    .projects {
+        max-width: 738px;
+    }
+
+    .projects__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
+        height: 2176px;
+    }
+
+    .projects__item {
+        max-width: 354px;
+        max-height: 440px;
+    }
+
+    .figure__caption--padding-bottom {
+        padding-bottom: 54px;
+    }
+}
+
 @media screen and (min-width: 1200px) {
 .projects {
     padding-top: 0px;
@@ -122,6 +144,4 @@
     flex-basis: calc(100% / 3 - 30px);
     max-width: 370px;
 }
-
-
 }

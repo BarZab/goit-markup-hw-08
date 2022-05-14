@@ -72,6 +72,38 @@
     }
 }
 
+@media screen and (min-width: 768px) {
+
+    .filters__button-list {
+        max-width: 658px;
+        justify-content: space-between;
+    }
+
+    .filters__button {
+        margin: 0;
+    }
+
+    .filters__button--all {
+        padding: 6px 13px;
+    }
+
+    .filters__button--pages {
+        padding: 6px 40px;
+    }
+
+    .filters__button--apps {
+        padding: 6px 38px;
+    }
+
+    .filters__button--design {
+        padding: 6px 28px;
+    }
+
+    .filters__button--marketing {
+        padding: 6px 27px;
+    }
+}
+
 @media screen and (min-width: 1200px) {
 .filters {
     padding-top: 94px;

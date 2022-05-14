@@ -240,6 +240,17 @@
 }
 
 @media screen and (max-width: 767.999px) {
+
+    .form-title {
+        max-width: 370px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .modal-window {
+        width: 450px;
+    }
+
     .form-title {
         max-width: 370px;
     }
@@ -252,6 +263,7 @@
     }
 
     .form-title {
+        max-width: 448px;
         line-height: 23px;
     }
 
@@ -261,18 +273,6 @@
 
     .form__comment {
         width: 448px;
-    }
-
-    .form__person {
-        top: 19.5%;
-    }
-
-    .form__phone {
-        top: 31%;
-    }
-
-    .form__email {
-        top: 42.7%;
     }
 
     .form__checkbox-description {

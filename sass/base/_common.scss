@@ -28,9 +28,10 @@ body {
     text-decoration: none;
     color: var(--text-two);
     fill: var(--text-two);
-    line-height: 171%;
-    font-size: 14px;
+    line-height: 14%;
+    font-size: 12px;
     font-weight: 500;
+    letter-spacing: 0.02em;
 
     transition-property: color;
     transition-duration: 250ms;
@@ -70,7 +71,12 @@ body {
 
 @media screen and (min-width: 1200px) {
     .title {
-            font-size: 36px;
-            line-height: 42px;
-        }
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .contact {
+        font-size: 14px;
+        line-height: 171%;
+    }
 }

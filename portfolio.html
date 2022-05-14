@@ -14,25 +14,27 @@
 </head>
 <body>
     <header class="header container--align">
+        <div class="header__left-side">
         <h2 class="header__heading">
             <a href="index.html" class="header__logo"><span class="logo__branding">Web</span>Studio</a>
         </h2>
     
         <nav>
             <ul class="header__menu">
-                <li><a href="index.html" class="header__nav">Agencja</a></li>
+                <li><a href="index.html" class="header__nav header__nav--padding">Agencja</a></li>
                 <li class="header__current-page"><a href="portfolio.html" class="header__current-page-link">Portfolio</a></li>
                 <li><a href="kontakt" class="header__nav header__nav--padding">Kontakt</a></li>
             </ul>
         </nav>
+        </div>
     
         <ul class="header__contacts">
             <li class="header__mail"><a href="mailto:info@devstudio.com" class="contact">
-                    <svg class="header__icon" width="16px" height="12px">
+                    <svg class="header__icon header__icon--mail-size">
                         <use href="./images/icons.svg#icon-envelope"></use>
                     </svg>info@devstudio.com</a></li>
             <li><a href="tel:+48111111111" class="contact">
-                    <svg class="header__icon" width="10px" height="16px">
+                    <svg class="header__icon header__icon--phone-size">
                         <use href="./images/icons.svg#icon-smartphone"></use>
                     </svg>+48 111 111 111</a></li>
         </ul>
@@ -76,7 +78,7 @@
                         do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji
                     </p>
                 </div>
-                <figcaption class="figure__caption">
+                <figcaption class="figure__caption figure__caption--padding-bottom">
                     <p  class="figure__caption-top">Technocrack</p>
                     <p  class="figure__caption-bottom">Strona Internetowa</p>
                 </figcaption>
@@ -294,6 +296,7 @@
     </main>
     <footer class="footer container">
         <ul class="footer__list">
+            <div class="footer__div">
             <li>
                 <h2>
                     <a href="/" class="footer__logo"><span class="logo__branding">Web</span>Studio</a>
@@ -339,6 +342,7 @@
                     </li>
                 </ul>
             </li>
+            </div>
             <li class="footer__form">
                 <p class="footer__join">ZAPISZ SIĘ DO NEWSLETTERA</p>
                 <form>
