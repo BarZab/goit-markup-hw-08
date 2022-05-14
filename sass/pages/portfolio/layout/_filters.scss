@@ -43,12 +43,14 @@
 }
 
 @media screen and (max-width: 399.999px) {
+
     .filters__button-list {
         justify-content: center;
     }
 }
 
 @media screen and (max-width: 767.999px) {
+
     .filters__button--all {
         margin-bottom: 15px;
         padding: 6px 13px;
@@ -105,12 +107,17 @@
 }
 
 @media screen and (min-width: 1200px) {
-.filters {
-    padding-top: 94px;
-    padding-bottom: 50px;
-}
 
-.filters__button {
-    padding: 6px 20px;
-}
+    .filters {
+        margin: 94px 0 50px;
+    }
+
+    .filters__button-list {
+        margin: 0 auto;
+        max-width: 572px;
+    }
+
+    .filters__button {
+        padding: 6px 22px;
+    }
 }

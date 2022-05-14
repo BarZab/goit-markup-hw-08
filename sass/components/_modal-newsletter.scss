@@ -209,6 +209,7 @@
 }
 
 @media screen and (max-width: 369.999px) {
+
     .form__input,
     .form__comment {
         width: 250px;
@@ -247,6 +248,7 @@
 }
 
 @media screen and (min-width: 768px) {
+
     .modal-window {
         width: 450px;
     }
@@ -257,6 +259,7 @@
 }
 
 @media screen and (min-width: 1200px) {
+    
     .modal-window {
         width: 528px;
         height: 581px;
