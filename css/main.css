@@ -560,7 +560,8 @@ body {
   align-items: center;
   border-bottom: 1px solid #ececec;
   height: 60px;
-  justify-content: space-between;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .header__div {
